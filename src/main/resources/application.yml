@@ -1,0 +1,20 @@
+#spring:
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+server:
+  port: 8081
+
+rabbitmq:
+  queue:
+    name: rashad_queue
+    json:
+      name: rashad_json_queue
+  exchange:
+    name: rashad_exchange
+  routing:
+    key: rashad_key
+    json:
+      key: rashad_json_key
